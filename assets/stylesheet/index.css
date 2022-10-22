@@ -6,7 +6,9 @@
 
 :root {
     --white: #FFFFFF;
+    --light-grey: #D9D9D9;
     --beaver: #A78976;
+    --black: #141414;
     --eerie-black: #1F1F1F;
     --jet: #292929;
 }
@@ -84,7 +86,7 @@ nav.nav_menu.active a {
 
 nav.nav_menu.active a:hover {
     color: var(--beaver);
-    background-color: #141414;
+    background-color: var(--black);
     transition: all .4s;
 }
 
@@ -280,6 +282,7 @@ span+span {
     letter-spacing: .1rem;
     margin: 2rem 0;
     border: none;
+    cursor: pointer;
 }
 
 .contact_button {
@@ -294,12 +297,7 @@ span+span {
 
 .links img {
     width: 2.4rem;
-    margin: 0 1rem;
-}
-
-.links img:hover {
-    filter: invert(1);
-    transition: .4s;
+    margin: 0 .5rem;
 }
 
 /* Sobre mí */
@@ -337,10 +335,13 @@ span+span {
 }
 
 .texto_sobreMi {
-    color: #d9d9d9;
+    color: var(--light-grey);
     font-family: 'Cooper Hewitt';
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     letter-spacing: .1rem;
+    white-space: pre-line;
+    text-align: justify;
+    line-height: 2.2rem;
 }
 
 .container_image-sobreMi {
