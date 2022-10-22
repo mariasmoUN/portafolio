@@ -9,10 +9,89 @@
 
     <title>Mariana Arias | Desarrolladora Web Front-End</title>
 
-    <!-- <link rel="shortcut icon" href="" type="image/x-icon"> -->
+    <!-- Hojas de estilo -->
     <link rel="stylesheet" href="./assets/stylesheet/index.css">
+    <link rel="stylesheet" href="./assets/stylesheet/tablet.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="./assets/stylesheet/desktop.css" media="screen and (min-width: 1024px)">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/ae0fd6f99f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <header class="header">
+        <label class="logo">Mariana Arias</label>
+
+        <nav class="nav_menu">
+            <a href="#sobreMi">Sobre mí</a>
+            <a href="#">Habilidades</a>
+            <a href="#">Formación</a>
+            <a href="#">Proyectos</a>
+            <a href="#">Contacto</a>
+        </nav>
+
+        <div id="button" class="btn not-active">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="home">
+            <picture class="container_image-home">
+                <img class="image_home" src="./assets/images/image-home.png" alt="Ilustración mujer y plantas">
+            </picture>
+            
+            <div class="home_info">
+                <div class="container_text-info">
+                    <p class="home_text-1">Hola! Soy</p>
+                    <p class="home_text-2">Mariana Arias</p>
+                </div>
+                <p class="home_text-3">Desarrolladora web front-end</p>
+
+                <div class="container_button">
+                    <button class="cv_button">Descargar CV</button>
+                    <button class="contact_button">Contacto</button>
+                </div>
+            </div>
+
+            <div class="links">
+                <a href="https://www.linkedin.com/in/mariana-arias-montoya-b37a311a7/" target="_blank">
+                    <img src="./assets/images/icon-linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/mariasmoUN" target="_blank">
+                    <img src="./assets/images/icon-github.png" alt="GitHub">
+                </a>
+                <a href="https://www.instagram.com/mar.am0410/?next=%2F">
+                    <img src="./assets/images/icon-instagram.png" alt="Instagram">
+                </a>
+            </div>
+        </section>
+
+        <section class="sobreMi" id="sobreMi">
+            <h1>Sobre mí</h1>
+
+            <div class="container_texto-sobreMi">
+                <span class="title_sobreMi">Mariana Arias</span>
+                <span class="texto_sobreMi">Soy estudiante del pregrado de Estadística y estudiante autodidacta de Desarrollo Web enfocado en   programación Frontend.<br>
+                    Aspiro conseguir empleo en el mundo del Desarrollo Web, adquirir experiencia, nuevos conocimientos y fortalecer mi vida profesional.
+                    <br><br>
+                    Soy una persona empática y entusiasta, con
+                    competencias enfocadas en el trabajo en equipo, comunicación asertiva, resolución de problemas, responsable y proactiva, me gusta aprender de los demás y superarme continuamente.</span>
+            </div>
+
+            <picture class="container_image-sobreMi">
+                <img class="image_sobreMi" src="./assets/images/image-sobreMi.png" alt="Ilustración mujer y café">
+            </picture>
+        </section>
+    </main>
+
+    <!-- Archivo Js -->
+    <script src="./script.js"></script>
 </body>
 </html>

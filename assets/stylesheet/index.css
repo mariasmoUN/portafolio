@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('../fonts/CooperHewitt-Light.woff') format('woff'),
+    url('../fonts/CooperHewitt-Thin.woff') format('woff');
+}
+
+:root {
+    --white: #FFFFFF;
+    --beaver: #A78976;
+    --eerie-black: #1F1F1F;
+    --jet: #292929;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,4 +19,338 @@
 
 html {
     font-size: 62.5%;
+}
+
+/* Header */
+
+.header {
+    background-color: var(--jet);
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+/*     box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%), 0 25px 10px -24px rgb(5 5 5 / 10%); */
+}
+
+.logo {
+    color: var(--beaver);
+    font-family: 'Cooper Hewitt';
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: .1rem;  
+}
+nav.nav_menu {
+    display: none;
+}
+
+nav.nav_menu.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 6.6rem;
+    width: 100%;
+    height: auto;
+    background-color: var(--eerie-black);
+    box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%), 0 25px 10px -24px rgb(5 5 5 / 10%);
+    animation: ease .4s left forwards;
+}
+
+@keyframes left {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+nav.nav_menu.active a {
+    padding: 2rem;
+    font-family: 'Cooper Hewitt';
+    letter-spacing: .1rem;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+nav.nav_menu.active a:hover {
+    color: var(--beaver);
+    background-color: #141414;
+    transition: all .4s;
+}
+
+nav.nav_menu.not-active {
+    display: none;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translate(-50%, -50%);
+    width: 3rem;
+    cursor: pointer;
+}
+
+#button span {
+    display: block;
+    width: 100%;
+    box-shadow: 0 2px 10px 0 rgb(0, 0, 0, 0.3);
+    border-radius: 3px;
+    height: .3rem;
+    background: var(--beaver);
+    transition: all .3s;
+    position: relative;
+}
+
+span+span {
+    margin-top: .6rem;
+}
+
+.active span:nth-child(1) {
+    animation: ease .7s top forwards;
+}
+
+.not-active span:nth-child(1) {
+    animation: ease .7s top-2 forwards;
+}
+
+.active span:nth-child(2) {
+    animation: ease .7s scaled forwards;
+}
+
+.not-active span:nth-child(2) {
+    animation: ease .7s scaled-2 forwards;
+}
+
+.active span:nth-child(3) {
+    animation: ease .7s bottom forwards;
+}
+
+.not-active span:nth-child(3) {
+    animation: ease .7s bottom-2 forwards;
+}
+
+@keyframes top {
+    0% {
+        top: 0;
+        transform: rotate(0);
+    }
+    50% {
+        top: 1rem;
+        transform: rotate(0);
+    }
+    100% {
+        top: 1rem;
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes top-2 {
+    0% {
+        top: .8rem;
+        transform: rotate(45deg);
+    }
+    50% {
+        top: .8rem;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: 0;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes bottom {
+    0% {
+        bottom: 0;
+        transform: rotate(0);
+    }
+    50% {
+        bottom: .8rem;
+        transform: rotate(0);
+    }
+    100% {
+        bottom: .8rem;
+        transform: rotate(135deg);
+    }
+}
+
+@keyframes bottom-2 {
+    0% {
+        bottom: .8rem;
+        transform: rotate(135deg);
+    }
+    50% {
+        bottom: .8rem;
+        transform: rotate(0);
+    }
+    100% {
+        bottom: 0;
+        transform: rotate(0);
+    }
+}
+
+@keyframes scaled {
+    50% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes scaled-2 {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Home */
+
+.home {
+    background-color: var(--jet);
+    width: 100%;
+    height: auto;
+}
+
+.container_image-home {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 12rem 0 5rem 0;
+}
+
+.image_home {
+    width: 66%;
+}
+
+.home_info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.home_text-1 {
+    font-family: 'Cooper Hewitt';
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.home_text-2 {
+    font-family: 'PT Sans';
+    color: var(--beaver);
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+}
+
+.home_text-3 {
+    font-family: 'Cooper Hewitt';
+    color: var(--white);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+.cv_button {
+    background-color: var(--beaver);
+    border-radius: 3rem;
+    padding: .5rem 2rem;
+    color: var(--jet);
+    font-family: 'Cooper Hewitt';
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin: 2rem 0;
+    border: none;
+}
+
+.contact_button {
+    display: none;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 6rem 0;
+}
+
+.links img {
+    width: 2.4rem;
+    margin: 0 1rem;
+}
+
+.links img:hover {
+    filter: invert(1);
+    transition: .4s;
+}
+
+/* Sobre mí */
+
+.sobreMi {
+    background-color: var(--eerie-black);
+    width: 100%;
+    height: auto;
+}
+
+.sobreMi h1 {
+    display: block;
+    text-align: center;
+    color: var(--white);
+    font-family: 'Cooper Hewitt';
+    font-size: 2.4rem;
+    letter-spacing: .1rem;
+    padding-top: 6rem;
+}
+
+.container_texto-sobreMi {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 3rem;
+}
+
+.title_sobreMi {
+    font-family: 'Cooper Hewitt';
+    color: var(--beaver);
+    text-align: center;
+    font-size: 2.2rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.texto_sobreMi {
+    color: #d9d9d9;
+    font-family: 'Cooper Hewitt';
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+}
+
+.container_image-sobreMi {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.image_sobreMi {
+    width: 80%;
 }

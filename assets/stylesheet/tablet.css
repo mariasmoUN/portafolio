@@ -1,0 +1,32 @@
+/* Header */
+
+.logo {
+    font-size: 2.4rem;
+}
+
+nav.nav_menu.active {
+    width: 50%;
+    margin-left: 50%;
+    top: 7.1rem;
+}
+
+/* Home */
+
+.image_home {
+    max-width: 60%;
+}
+
+.container_text-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_text-1 {
+    margin-right: 1rem;
+    font-size: 2.4rem;
+}
+
+.home_text-2 {
+    font-size: 3.6rem;
+}

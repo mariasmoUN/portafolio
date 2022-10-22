@@ -1,0 +1,36 @@
+/* Header */
+
+.header {
+    justify-content: flex-end;
+}
+
+.logo {
+    display: none;
+}
+
+nav.nav_menu {
+    display: flex;
+}
+
+nav.nav_menu a {
+    font-size: 1.6rem;
+    padding: .5rem;
+    color: var(--white);
+    font-family: 'Cooper Hewitt';
+    text-decoration: none;
+    letter-spacing: .1rem;
+    right: 0;
+    margin-right: 3rem;
+}
+
+nav.nav_menu a:hover {
+    color: var(--beaver);
+    padding: .5rem 1rem;
+    background: var(--eerie-black);
+    border-radius: 1.5rem;
+    transition: all .4s ease;
+}
+
+div.btn {
+    display: none;
+}
