@@ -43,7 +43,8 @@ html {
     font-family: 'Cooper Hewitt';
     font-weight: bold;
     font-size: 2rem;
-    letter-spacing: .1rem;  
+    letter-spacing: .1rem;
+    text-decoration: none;  
 }
 nav.nav_menu {
     display: none;
@@ -362,7 +363,7 @@ span+span {
 .habilidades {
     background-color: var(--jet);
     width: 100%;
-    height: auto;
+    height: 70rem;
 }  
 
 .habilidades h1 {
@@ -372,5 +373,29 @@ span+span {
     font-family: 'Cooper Hewitt';
     font-size: 2.4rem;
     letter-spacing: .1rem;
-    padding-top: 6rem;
+    padding: 6rem 0 5rem 0;
+}
+
+.cards_container--habilidades {
+    display: grid;
+    grid-template-columns: 15rem 15rem;
+    grid-template-rows: 16rem 16rem 16rem;
+    grid-auto-flow: row;
+    gap: 5%;
+    justify-content: center;
+    height: 54rem;
+}
+
+.cards--habilidades {
+    background-color: var(--eerie-black);
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.cards--habilidades p {
+    color: var(--white);
+    font-family: 'Cooper Hewitt';
+    letter-spacing: .1rem;
+    font-size: 1.4rem;
 }
