@@ -21,6 +21,8 @@
 
 html {
     font-size: 62.5%;
+    scrollbar-width: thin;
+    scrollbar-color: var(--beaver) var(--eerie-black);
 }
 
 /* Header */
@@ -36,6 +38,7 @@ html {
     top: 0;
     left: 0;
     z-index: 1;
+    transition: .7s;
 /*     box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%), 0 25px 10px -24px rgb(5 5 5 / 10%); */
 }
 
@@ -474,4 +477,40 @@ img.logo-sena {
     letter-spacing: .1rem;
     font-size: 1.4rem;
     margin-bottom: .7rem;
+}
+
+/* Proyectos */
+
+.proyectos {
+    background-color: var(--jet);
+    width: 100%;
+    height: auto;
+}
+
+.proyectos h1 {
+    display: block;
+    text-align: center;
+    color: var(--white);
+    font-family: 'Cooper Hewitt';
+    font-size: 2.4rem;
+    letter-spacing: .1rem;
+    padding: 6rem 0 5rem 0;
+}
+
+/* Contacto */
+
+.contacto {
+    background-color: var(--eerie-black);
+    width: 100%;
+    height: auto;
+}
+
+.contacto h1 {
+    display: block;
+    text-align: center;
+    color: var(--white);
+    font-family: 'Cooper Hewitt';
+    font-size: 2.4rem;
+    letter-spacing: .1rem;
+    padding: 6rem 0 5rem 0;
 }

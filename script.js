@@ -9,7 +9,6 @@ btn.addEventListener('click', function() {
         this.classList.add('not-active');
         document.querySelector('.nav_menu').classList.remove('active');
         document.querySelector('.nav_menu').classList.add('not-active');
-
     }
     else {
         this.classList.add('active');
