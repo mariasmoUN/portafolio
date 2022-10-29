@@ -35,6 +35,7 @@ html {
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 1;
 /*     box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%), 0 25px 10px -24px rgb(5 5 5 / 10%); */
 }
 
@@ -377,25 +378,22 @@ span+span {
 }
 
 .cards_container--habilidades {
-    display: grid;
-    grid-template-columns: 12rem 12rem;
-    grid-template-rows: 14rem 14rem 14rem;
-    grid-auto-flow: row;
-    column-gap: 7%;
-    row-gap: 4%;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    height: 53rem;
+    padding: 0 3rem 3rem 3rem;
 }
 
 .cards--habilidades {
     background-color: var(--eerie-black);
     border-radius: 24px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     filter: grayscale(1);
+    width: 11rem;
+    margin: 0 1rem 2rem 1rem;
 }
 
 .cards--habilidades:hover {
@@ -404,6 +402,7 @@ span+span {
 }
 
 .cards--habilidades img {
+    margin-top: .7rem;
     width: 9rem;
 }
 
@@ -434,29 +433,45 @@ span+span {
 }
 
 .cards_container--formacion {
-    display: grid;
-    border: 1px solid firebrick;
-
-    /* grid-template-columns: 12rem 12rem;
-    grid-template-rows: 14rem 14rem 14rem;
-    grid-auto-flow: row;
-    column-gap: 7%;
-    row-gap: 4%;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    height: 53rem; */
+    padding: 0 2rem 3rem 2rem;
 }
 
 .cards--formacion {
     background-color: var(--jet);
     border-radius: 24px;
     display: flex;
-
-    /* background-color: var(--eerie-black);
-    border-radius: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     text-align: center;
-    filter: grayscale(1); */
+    width: 32rem;
+    margin: 0 1rem 2rem 1rem;
+    padding: 1rem;
+}
+
+.cards--formacion img {
+    width: 25rem;
+}
+
+img.logo-sena {
+    width: 20rem;
+    margin: 2rem 0;
+}
+
+.cards--formacion p:nth-child(2) {
+    color: var(--beaver);
+    font-family: 'Cooper Hewitt';
+    letter-spacing: .1rem;
+    font-size: 1.8rem;
+    margin-bottom: .7rem;
+}
+
+.cards--formacion p:nth-child(3) {
+    color: var(--light-grey);
+    font-family: 'Cooper Hewitt';
+    letter-spacing: .1rem;
+    font-size: 1.4rem;
+    margin-bottom: .7rem;
 }
