@@ -1,6 +1,10 @@
 const btn = document.getElementById('button');
 
-/* Barra de navegacion */
+/* Header */
+window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    header.classList.toggle('abajo', window.scrollY > 0);
+})
 
 /* Boton Menu */
 btn.addEventListener('click', function() {

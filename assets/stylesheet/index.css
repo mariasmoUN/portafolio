@@ -38,8 +38,11 @@ html {
     top: 0;
     left: 0;
     z-index: 1;
-    transition: .7s;
-/*     box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%), 0 25px 10px -24px rgb(5 5 5 / 10%); */
+    transition: .5s;
+}
+
+.header.abajo {
+    box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%), 0 25px 10px -24px rgb(5 5 5 / 10%);
 }
 
 .logo {
