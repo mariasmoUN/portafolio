@@ -1,7 +1,7 @@
 /* Header */
 
 .logo {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
 }
 
 nav.nav_menu.active {
@@ -12,9 +12,9 @@ nav.nav_menu.active {
 
 /* Home */
 
-.image_home {
+/* .image_home {
     max-width: 60%;
-}
+} */
 
 .container_text-info {
     display: flex;
