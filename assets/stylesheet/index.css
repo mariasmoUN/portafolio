@@ -29,7 +29,7 @@ html {
 
 .header {
     background-color: var(--jet);
-    padding: 2rem 3rem;
+    padding: 1.5rem 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,7 +62,7 @@ nav.nav_menu.active {
     flex-direction: column;
     position: absolute;
     left: 0;
-    top: 6.3rem;
+    top: 5.3rem;
     width: 100%;
     height: auto;
     background-color: var(--eerie-black);
@@ -77,10 +77,6 @@ nav.nav_menu.active {
     100% {
         left: 0;
     }
-}
-
-nav.nav_menu {
-    display: none;
 }
 
 nav.nav_menu.active a {
@@ -98,6 +94,10 @@ nav.nav_menu.active a:hover {
     color: var(--beaver);
     background-color: var(--black);
     transition: all .4s;
+}
+
+nav.nav_menu.not-active a {
+    display: none;
 }
 
 .btn {
@@ -246,7 +246,7 @@ span+span {
 }
 
 .image_home {
-    width: 60%;
+    max-width: 65%;
 }
 
 .home_info {
@@ -275,6 +275,30 @@ span+span {
     font-size: 1.4rem;
     text-transform: uppercase;
     letter-spacing: .2rem;
+    width: 28rem;
+    margin: 0 auto;
+    text-align: start;
+}
+
+.text-type {
+    position: relative;
+}
+
+.text-type::after {
+    content: '|';
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    color: var(--beaver);
+    background-color: var(--jet);
+    width: 100%;
+    animation: typing 4s steps(28) alternate infinite;
+}
+
+@keyframes typing {
+    to{
+        width: 0%;
+    }
 }
 
 .cv_button {
@@ -511,13 +535,14 @@ img.logo-sena {
     flex-wrap: wrap;
     transform-style: preserve-3d;
     perspective: 50rem;
-    padding: 2rem 3rem 0 3rem;
+/*     padding: 2rem 3rem 0 3rem; */
+    border: 1px solid gold;
 }
 
 .container-proyectos .box {
     position: relative;
-    width: 27.5rem;
-    height: 27.5rem;
+    width: 32rem;
+    height: 32rem;
     background: var(--eerie-black);
     transition: 0.4s;
     transform-style: preserve-3d;
@@ -526,7 +551,7 @@ img.logo-sena {
     border-radius: 20px;
 }
 
-.container-proyectos:hover .box {
+/* .container-proyectos:hover .box {
     transform: rotateY(25deg);
 }
 
@@ -538,7 +563,7 @@ img.logo-sena {
     transform: rotateY(0deg) scale(1.25);
     z-index: 1;
     box-shadow: 0 25px 40px rgba(0,0,0,0.5);
-}
+} */
 
 .container-proyectos .box .image-box {
     position: absolute;
@@ -555,7 +580,7 @@ img.logo-sena {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg,#f00,#000);
+    background: linear-gradient(180deg,#fff,#000);
     z-index: 1;
     opacity: 0;
     transition: 0.5s;

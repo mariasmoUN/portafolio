@@ -7,14 +7,14 @@
 nav.nav_menu.active {
     width: 50%;
     margin-left: 50%;
-    top: 7.1rem;
+    top: 5.9rem;
 }
 
 /* Home */
 
-/* .image_home {
-    max-width: 60%;
-} */
+.image_home {
+    max-width: 50rem;
+}
 
 .container_text-info {
     display: flex;
