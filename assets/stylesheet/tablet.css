@@ -30,3 +30,36 @@ nav.nav_menu.active {
 .home_text-2 {
     font-size: 3.6rem;
 }
+
+/* Sobre mi */
+
+.sobreMi {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_content-sobreMi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_texto-sobreMi {
+    padding: 4rem;
+}
+
+.title_sobreMi {
+    font-size: 3rem;
+}
+
+.texto_sobreMi {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+}
+
+.container_image-sobreMi {
+    width: 65%;
+    margin-top: 2rem;
+}

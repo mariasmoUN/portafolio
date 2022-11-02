@@ -385,6 +385,7 @@ span+span {
 .image_sobreMi {
     width: 65%;
     margin-bottom: 5rem;
+    border-bottom: 2px solid var(--jet);
 }
 
 /* Habilidades */
