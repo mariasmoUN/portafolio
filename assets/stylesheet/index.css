@@ -406,11 +406,21 @@ span+span {
     padding: 6rem 0 5rem 0;
 }
 
+.puntos1-habilidades, .puntos2-habilidades {
+    display: none;
+}
+
+.container_fondoPuntos--habilidades img {
+    display: none;
+}
+
 .cards_container--habilidades {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 13rem 13rem;
+    grid-template-rows: 14rem 14rem 14rem;
+    gap: 3rem;
     justify-content: center;
-    padding: 0 3rem 3rem 3rem;
+    padding-bottom: 5rem;
 }
 
 .cards--habilidades {
@@ -419,15 +429,17 @@ span+span {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
     filter: grayscale(1);
-    width: 11rem;
-    margin: 0 1rem 2rem 1rem;
+    width: 13rem;
+    height: 14rem;
 }
 
 .cards--habilidades:hover {
     filter: grayscale(0);
-    transition: 1s;
+    border: 1px solid var(--beaver);
+    transition: all 1s;
 }
 
 .cards--habilidades img {

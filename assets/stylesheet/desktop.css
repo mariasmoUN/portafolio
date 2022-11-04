@@ -132,6 +132,10 @@ div.btn {
     padding-bottom: 4rem;
 }
 
+.sobreMi h1 {
+    margin-top: 2rem;
+}
+
 .container_content-sobreMi {
     flex-direction: row-reverse;
 }
@@ -153,4 +157,43 @@ div.btn {
     font-size: 2rem;
     letter-spacing: .2rem;
     line-height: 2.8rem;
+}
+
+/* Habilidades */
+
+.habilidades {/* 
+    border: 3px solid salmon; */
+    height: 100vh;
+    position: relative;
+}
+
+.habilidades h1 {
+    padding-top: 8rem;
+}
+
+.puntos1-habilidades {
+    display: inline;
+    position: absolute;
+    width: 6rem;
+    margin: 15rem 0 0 /* 41rem */ 23%;
+    background-attachment: fixed;
+}
+
+.puntos2-habilidades {
+    display: inline;
+    position: absolute;
+    width: 6rem;
+    margin: 0 0 0 72%;
+}
+
+.cards_container--habilidades {
+    grid-template-columns: 13rem 13rem 13rem;
+    grid-template-rows: 14rem 14rem;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+.cards--habilidades p {
+    font-size: 1.6rem;
+    margin-top: .8rem;
 }

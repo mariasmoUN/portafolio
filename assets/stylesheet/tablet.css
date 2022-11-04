@@ -63,3 +63,9 @@ nav.nav_menu.active {
     width: 65%;
     margin-top: 2rem;
 }
+
+/* Habilidades */
+
+.cards_container--habilidades {
+    column-gap: 4rem;
+}
