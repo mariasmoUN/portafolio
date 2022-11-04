@@ -80,3 +80,9 @@ nav.nav_menu.active {
 .cards--formacion {
     margin: 0 2rem 3rem 2rem;
 }
+
+/* Proyectos */
+
+.cards--proyectos {
+    max-width: 48rem;
+}
