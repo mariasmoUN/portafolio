@@ -69,3 +69,14 @@ nav.nav_menu.active {
 .cards_container--habilidades {
     column-gap: 4rem;
 }
+
+/* Formación */
+
+.cards_container--formacion {
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.cards--formacion {
+    margin: 0 2rem 3rem 2rem;
+}

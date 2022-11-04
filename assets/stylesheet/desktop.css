@@ -161,8 +161,7 @@ div.btn {
 
 /* Habilidades */
 
-.habilidades {/* 
-    border: 3px solid salmon; */
+.habilidades {
     height: 100vh;
     position: relative;
 }
@@ -193,7 +192,38 @@ div.btn {
     margin-top: 2rem;
 }
 
+.cards--habilidades {
+    filter: grayscale(1);
+}
+
+.cards--habilidades:hover {
+    filter: grayscale(0);
+    border: 1px solid var(--beaver);
+    transition: all 1s;
+}
+
 .cards--habilidades p {
     font-size: 1.6rem;
     margin-top: .8rem;
+}
+
+/* Formación */
+
+.formacion {
+    height: 100vh;
+    position: relative;
+}
+
+.formacion h1 {
+    padding-top: 8rem;
+}
+
+.cards--formacion {
+    transition: .8s all;
+}
+
+.cards--formacion:hover {
+    border: 1px solid var(--beaver);
+    box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%), 0 25px 10px -24px rgb(5 5 5 / 10%);
+    transform: scale(1.1);
 }

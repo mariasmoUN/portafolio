@@ -431,15 +431,9 @@ span+span {
     align-items: center;
     justify-content: center;
     text-align: center;
-    filter: grayscale(1);
+    filter: saturate(40%);
     width: 13rem;
     height: 14rem;
-}
-
-.cards--habilidades:hover {
-    filter: grayscale(0);
-    border: 1px solid var(--beaver);
-    transition: all 1s;
 }
 
 .cards--habilidades img {
@@ -475,7 +469,8 @@ span+span {
 
 .cards_container--formacion {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     padding: 0 2rem 3rem 2rem;
 }
@@ -488,25 +483,35 @@ span+span {
     align-items: center;
     text-align: center;
     width: 32rem;
+    height: 33rem;
     margin: 0 1rem 2rem 1rem;
     padding: 1rem;
+    justify-content: space-between;
 }
 
 .cards--formacion img {
     width: 25rem;
 }
 
+.container_texto--formacion {
+    margin-bottom: 1.3rem;
+}
+
+img.logo-unal {
+    width: 24rem;
+}
+
 img.logo-one {
-    width: 20rem;
+    width: 21rem;
     margin: 7rem 0 6rem 0;
 }
 
 img.logo-sena {
-    width: 20rem;
-    margin: 2rem 0;
+    width: 18rem;
+    margin: 2.4rem 0;
 }
 
-.cards--formacion p:nth-child(2) {
+.cards--formacion p:nth-child(1) {
     color: var(--beaver);
     font-family: 'Cooper Hewitt';
     letter-spacing: .1rem;
@@ -514,12 +519,12 @@ img.logo-sena {
     margin-bottom: .7rem;
 }
 
-.cards--formacion p:nth-child(3) {
+.cards--formacion p:nth-child(2) {
     color: var(--light-grey);
     font-family: 'Cooper Hewitt';
     letter-spacing: .1rem;
-    font-size: 1.4rem;
-    margin-bottom: .7rem;
+    font-size: 1.4rem;/* 
+    margin-bottom: .7rem; */
 }
 
 /* Proyectos */
@@ -549,7 +554,7 @@ img.logo-sena {
     transform-style: preserve-3d;
     perspective: 50rem;
 /*     padding: 2rem 3rem 0 3rem; */
-    border: 1px solid gold;
+ /*    border: 1px solid gold; */
 }
 
 .container-proyectos .box {
