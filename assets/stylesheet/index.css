@@ -533,6 +533,7 @@ img.logo-sena {
     background-color: var(--jet);
     width: 100%;
     height: auto;
+    padding: 0 1rem 1rem 1rem;
 }
 
 .proyectos h1 {
@@ -545,116 +546,92 @@ img.logo-sena {
     padding: 6rem 0 5rem 0;
 }
 
-.container-proyectos {
-    position: relative;
+.cards_container--proyectos {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards--proyectos {
+    border-radius: 20px;
+    padding-bottom: 2rem;
+    background-color: var(--eerie-black);
+    min-width: 33rem;
+    max-width: 38rem;
+    box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%), 0 25px 10px -24px rgb(5 5 5 / 10%);
+}
+
+.card_JuegoAhorcado {
+    margin-bottom: 4rem;
+}
+
+.card_portafolio {
+    margin-bottom: 4rem;
+    border: 1px solid var(--eerie-black);
+}
+
+.container_imgCard--proyectos {
+    margin-bottom: 1rem;
+    border-radius: 20px 20px 0 0;
+}
+
+.container_imgCard--proyectos img {
     width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.container_textCard--proyectos {/* 
+    border: 2px solid darkcyan; */
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+
+.container_textCard--proyectos h2 {
+    font-family: 'Cooper Hewitt';
+    letter-spacing: .1rem;
+    font-size: 1.8rem;
+    color: var(--white);
+    font-weight: bold;
+    display: inline;
+}
+
+.container_textCard--proyectos p {
+    color: var(--light-grey);
+    font-family: 'Cooper Hewitt';
+    letter-spacing: .1rem;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+.container_btn--proyectos {/* 
+    border: 2px solid hotpink; */
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    transform-style: preserve-3d;
-    perspective: 50rem;
-/*     padding: 2rem 3rem 0 3rem; */
- /*    border: 1px solid gold; */
 }
 
-.container-proyectos .box {
-    position: relative;
-    width: 32rem;
-    height: 32rem;
-    background: var(--eerie-black);
-    transition: 0.4s;
-    transform-style: preserve-3d;
-    overflow: hidden;
-    margin: 0 2rem 6rem 2rem;
-    border-radius: 20px;
-}
-
-/* .container-proyectos:hover .box {
-    transform: rotateY(25deg);
-}
-
-.container-proyectos .box:hover ~ .box {
-    transform: rotateY(-25deg);
-}
-
-.container-proyectos .box:hover {
-    transform: rotateY(0deg) scale(1.25);
-    z-index: 1;
-    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
-} */
-
-.container-proyectos .box .image-box {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.container-proyectos .box .image-box:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg,#fff,#000);
-    z-index: 1;
-    opacity: 0;
-    transition: 0.5s;
-    mix-blend-mode: multiply;
-}
-
-.container-proyectos .box:hover .image-box:before {
-    opacity: 1;
-}
-
-.container-proyectos .box .image-box img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.container-proyectos .box .contenido {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+.container_btn--proyectos button {
+    background: none;
+    color: var(--beaver);
+    border: 1px solid var(--beaver);
+    margin: 0 1rem;
+    padding: .8rem 0;
+    border-radius: 1rem;
     display: flex;
-    padding: 20px;
-    align-items: flex-end;
-    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    letter-spacing: .1rem;
 }
 
-.container-proyectos .box .contenido h2 {
-    color: #fff;
-    transition: 0.5s;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-    font-size: 20px;
-    transform: translateY(200px);
-    transition-delay: 0.3s;
+.btn_demo img {
+    width: 2rem;
+    margin-right: .8rem;
 }
 
-.container-proyectos .box:hover .contenido h2 {
-    transform: translateY(0px);
-}
-
-.container-proyectos .box .contenido p {
-    color: #fff;
-    transition: 0.5s;
-    font-size: 14px;
-    transform: translateY(200px);
-    transition-delay: 0.4s;
-}
-
-.container-proyectos .box:hover .contenido p {
-    transform: translateY(0px);
+.btn_repo img {
+    width: 2rem;
+    margin-right: .8rem;
 }
 
 /* Contacto */
