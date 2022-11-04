@@ -523,8 +523,7 @@ img.logo-sena {
     color: var(--light-grey);
     font-family: 'Cooper Hewitt';
     letter-spacing: .1rem;
-    font-size: 1.4rem;/* 
-    margin-bottom: .7rem; */
+    font-size: 1.4rem;
 }
 
 /* Proyectos */
@@ -544,6 +543,11 @@ img.logo-sena {
     font-size: 2.4rem;
     letter-spacing: .1rem;
     padding: 6rem 0 5rem 0;
+}
+
+.puntos1-proyectos,
+.puntos2-proyectos {
+    display: none;
 }
 
 .cards_container--proyectos {
@@ -581,8 +585,7 @@ img.logo-sena {
     border-radius: 20px 20px 0 0;
 }
 
-.container_textCard--proyectos {/* 
-    border: 2px solid darkcyan; */
+.container_textCard--proyectos {
     padding: 0 2rem;
     margin-bottom: 2rem;
 }
@@ -604,8 +607,7 @@ img.logo-sena {
     margin-top: 1rem;
 }
 
-.container_btn--proyectos {/* 
-    border: 2px solid hotpink; */
+.container_btn--proyectos {
     display: flex;
     justify-content: center;
 }
