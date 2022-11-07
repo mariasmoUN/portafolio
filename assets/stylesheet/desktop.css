@@ -267,3 +267,45 @@ div.btn {
 .text-portafolio {
     margin-top: -3rem;
 }
+
+/* Contacto */
+
+.contacto h1 {
+    padding: 8rem 0 2.5rem 0;
+}
+
+.container--contacto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.container_img--contacto {
+    display: inline;
+}
+
+.container_img--contacto img {
+    width: 50rem;
+}
+
+.container_form--contacto {
+    width: 48%;
+    margin: 0;
+    padding:3rem;
+    height: 47rem;
+}
+
+.contact-box .input-box input {
+    margin-bottom: 1.5rem;
+}
+
+.container_text--contacto p:nth-child(1) {
+    text-align: start;
+    margin-bottom: 1rem;
+}
+
+.container_text--contacto p:nth-child(2) {
+    font-size: 1.4rem;
+    margin-bottom: 3.5rem;
+}
