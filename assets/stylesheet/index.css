@@ -642,6 +642,7 @@ img.logo-sena {
     background-color: var(--eerie-black);
     width: 100%;
     height: auto;
+    padding: 0 2rem 3rem 2rem;
 }
 
 .contacto h1 {
@@ -651,5 +652,92 @@ img.logo-sena {
     font-family: 'Cooper Hewitt';
     font-size: 2.4rem;
     letter-spacing: .1rem;
-    padding: 6rem 0 5rem 0;
+    padding: 6rem 0 4rem 0;
+}
+
+.container_img--contacto {
+    display: none;
+}
+
+.container_form--contacto {
+    width: 100%;
+    background-color: var(--jet);
+    border-radius: 1.6rem;
+    padding: 3rem;
+}
+
+.container_text--contacto {
+    width: 100%;
+}
+
+.container_text--contacto p:nth-child(1) {
+    font-size: 2rem;
+    font-family: 'Cooper Hewitt';
+    letter-spacing: 1px;
+    text-align: center;
+    color: var(--beaver);
+    margin-bottom: 2rem;
+}
+
+.container_text--contacto p:nth-child(2) {
+    font-size: 1.4rem;
+    font-family: 'Cooper Hewitt';
+    color: var(--light-grey);
+    margin-bottom: 4rem;
+    letter-spacing: 1px;
+}
+
+.contact-box .input-box input {
+    position: relative;
+    width: 100%;
+    padding: .8rem 0;
+    font-size: 1.6rem;
+    color: var(--light-grey);
+    margin-bottom: 2rem;
+    border: none;
+    border-bottom: 1px solid var(--light-grey);
+    outline: none;
+    background: transparent;
+}
+
+.contact-box .input-box label {
+    position: relative;
+    left: 0;
+    top: -5rem;
+    padding: .8rem 0;
+    font-size: 1.6rem;
+    color: var(--light-grey);
+    pointer-events: none;
+    transition: .5s;
+    font-family: 'Cooper Hewitt';
+}
+
+.contact-box .input-box input:focus~label,
+.contact-box .input-box input:valid~label {
+    top: -7.5rem;
+    left: 0;
+    color: var(--beaver);
+    font-size: 1.2rem;
+}
+
+#btn-enviar {
+    padding: .8rem 2rem;
+    color: var(--beaver);
+    font-size: 1.4rem;
+    font-family: 'Cooper Hewitt';
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 3px;
+    border: 1px solid var(--beaver);
+    margin: auto;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+#btn-enviar:hover {
+    background-color: var(--beaver);
+    color: var(--white);
 }
