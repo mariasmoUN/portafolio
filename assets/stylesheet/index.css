@@ -613,11 +613,16 @@ img.logo-sena {
     justify-content: center;
 }
 
+.container_btn--proyectos a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 1rem;
+}
+
 .container_btn--proyectos button {
     background: none;
     color: var(--beaver);
     border: 1px solid var(--beaver);
-    margin: 0 1rem;
     padding: .8rem 0;
     border-radius: 1rem;
     display: flex;
@@ -625,6 +630,12 @@ img.logo-sena {
     justify-content: center;
     width: 10rem;
     letter-spacing: .1rem;
+    cursor: pointer;
+    transform: .2s;
+}
+
+.container_btn--proyectos button:hover {
+    background: var(--black);
 }
 
 .btn_demo img {

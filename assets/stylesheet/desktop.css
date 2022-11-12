@@ -102,7 +102,9 @@ div.btn {
 }
 
 .cv_button:hover {
-    background-color: #383838;
+    background: var(--black);
+    box-shadow: 0px 2px 10px #141414;
+    transition: 1s transform;
 }
 
 .contact_button {
@@ -123,6 +125,8 @@ div.btn {
 
 .contact_button:hover {
     background-color: #776254;
+    box-shadow: 0px 2px 10px #141414;
+    transition: 1s transform;
 }
 
 .links {
