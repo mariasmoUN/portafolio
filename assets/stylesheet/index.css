@@ -23,6 +23,7 @@ html {
     font-size: 62.5%;
     scrollbar-width: thin;
     scrollbar-color: var(--beaver) var(--eerie-black);
+    scroll-behavior: smooth;
 }
 
 /* Header */

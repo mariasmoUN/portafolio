@@ -21,15 +21,14 @@ nav.nav_menu a {
     text-decoration: none;
     letter-spacing: .1rem;
     right: 0;
-    margin-right: 3rem;
+    margin-right: 2.5rem;
 }
 
-nav.nav_menu a:hover {
+nav.nav_menu a:hover,
+nav.nav_menu a.active {
     color: var(--beaver);
-    padding: .5rem 1rem;
-    background: var(--eerie-black);
-    border-radius: 1.5rem;
-    transition: all .4s ease;
+    padding: .5rem;
+    transition: all .5s;
 }
 
 nav.nav_menu.not-active a {
