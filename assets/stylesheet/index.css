@@ -302,6 +302,10 @@ span+span {
     }
 }
 
+.container_parrafo-info {
+    display: none;
+}
+
 .cv_button {
     background-color: var(--beaver);
     border-radius: 3rem;

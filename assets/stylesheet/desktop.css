@@ -28,6 +28,7 @@ nav.nav_menu a:hover,
 nav.nav_menu a.active {
     color: var(--beaver);
     padding: .5rem;
+    border-bottom: 1px solid var(--beaver);
     transition: all .5s;
 }
 
@@ -87,6 +88,19 @@ div.btn {
     font-size: 1.8rem;
     width: 35rem;
     letter-spacing: .2rem;
+}
+
+.container_parrafo-info {
+    display: inline-block;
+    text-align: start;
+}
+
+.container_parrafo-info p {
+    font-family: 'Cooper Hewitt';
+    color: var(--light-grey);
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    line-height: 2rem;
 }
 
 .container_button {
