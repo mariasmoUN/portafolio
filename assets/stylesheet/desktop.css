@@ -98,6 +98,11 @@ div.btn {
     color: var(--beaver);
     border: 1px solid var(--beaver);
     margin-right: 1rem;
+    transition: .2s;
+}
+
+.cv_button:hover {
+    background-color: #383838;
 }
 
 .contact_button {
@@ -113,6 +118,11 @@ div.btn {
     margin: 2rem 0 2rem 1rem;
     border: none;
     cursor: pointer;
+    transition: .4s;
+}
+
+.contact_button:hover {
+    background-color: #776254;
 }
 
 .links {
