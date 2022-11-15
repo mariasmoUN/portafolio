@@ -637,7 +637,6 @@ img.logo-sena {
     width: 12rem;
     letter-spacing: .1rem;
     cursor: pointer;
-    transform: .2s;
 }
 
 .container_btn--proyectos button:hover {
@@ -715,6 +714,11 @@ img.logo-sena {
     letter-spacing: 1px;
 }
 
+.form-contact .input-invalid {
+    border: 1px solid #574438;
+    color: #574438;
+}
+
 .form-contact textarea {
     background: transparent;
     border: 1px solid var(--light-grey);
@@ -736,21 +740,29 @@ img.logo-sena {
 }
 
 .btn_form--contacto button {
-    background: var(--white);
+    background: #776254;
     border: none;
     font-family: 'Cooper Hewitt';
     width: 13rem;
     padding: .8rem 1rem;
     border-radius: .5rem;
-    color: var(--jet);
+    color: var(--white);
     font-size: 1.8rem;
     letter-spacing: 1px;
+    cursor: pointer;
+    transition: 1s all;
 }
 
 .btn_form--contacto button:hover {
-    background: var(--light-grey);
+    background: #776254;
     color: var(--black);
+    transform: scale(1.1);
+    box-shadow: 0px 9px 15px -1px rgba(0,0,0,0.20);
     transition: all .4s ease;
+}
+
+.btn_form--contacto button:active {
+    background: #574438;
 }
 
 /* Footer */
