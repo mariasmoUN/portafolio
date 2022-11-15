@@ -201,7 +201,7 @@ div.btn {
     display: inline;
     position: absolute;
     width: 6rem;
-    margin: 15rem 0 0 /* 41rem */ 23%;
+    margin: 15rem 0 0 /* 41rem */ 20%;
     background-attachment: fixed;
 }
 
@@ -209,11 +209,11 @@ div.btn {
     display: inline;
     position: absolute;
     width: 6rem;
-    margin: 0 0 0 72%;
+    margin: 0 0 0 76%;
 }
 
 .cards_container--habilidades {
-    grid-template-columns: 13rem 13rem 13rem;
+    grid-template-columns: 13rem 13rem 13rem 13rem;
     grid-template-rows: 14rem 14rem;
     padding: 0;
     margin-top: 2rem;

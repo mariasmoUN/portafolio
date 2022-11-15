@@ -248,6 +248,8 @@ span+span {
 
 .image_home {
     max-width: 65%;
+    transition: .4s;
+    animation: image 2s;
 }
 
 .home_info {
