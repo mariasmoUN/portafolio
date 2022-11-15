@@ -88,17 +88,7 @@ nav.nav_menu.active {
 }
 
 /* Contacto */
-
-/* .contacto {
-    padding: 0 8rem 5rem 8rem;
-}
-
-.container_form--contacto {
-    width: 80%;
+.container--contacto {
     margin: 0 auto;
-    padding: 4rem;
+    width: 80%;
 }
-
-.container_text--contacto p:nth-child(2) {
-    font-size: 1.6rem;
-} */

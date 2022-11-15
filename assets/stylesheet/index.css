@@ -622,7 +622,7 @@ img.logo-sena {
 .container_btn--proyectos a{
     text-decoration: none;
     display: inline-block;
-    margin: 0 1rem;
+    margin: 0 1.5rem;
 }
 
 .container_btn--proyectos button {
@@ -634,14 +634,17 @@ img.logo-sena {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10rem;
+    width: 12rem;
     letter-spacing: .1rem;
     cursor: pointer;
     transform: .2s;
 }
 
 .container_btn--proyectos button:hover {
-    background: var(--black);
+    background: #776254;
+    border: 1px solid #776254;
+    box-shadow: 0px 13px 33px -14px rgba(0,0,0,0.75);
+    transition: all .4s ease;
 }
 
 .btn_demo img {
@@ -695,6 +698,7 @@ img.logo-sena {
     color: var(--white);
     margin-bottom: 3rem;
     letter-spacing: 1px;
+    line-height: 2.3rem;
 }
 
 .form-contact input {

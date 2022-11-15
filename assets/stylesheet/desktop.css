@@ -302,38 +302,26 @@ div.btn {
     padding: 8rem 0 2.5rem 0;
 }
 
-/* .container--contacto {
+.container_box--contacto {
+    margin-top: 2rem;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
+    justify-content: space-evenly;
 }
 
 .container_img--contacto {
-    display: inline;
+    display: inline-block;
+    width: 60rem;
+    display: flex;
+    justify-content: center;
 }
 
 .container_img--contacto img {
     width: 50rem;
+    object-fit: contain;
 }
 
-.container_form--contacto {
-    width: 48%;
+.container--contacto {
+    width: 42%;
     margin: 0;
-    padding:3rem;
-    height: 47rem;
+    padding: 4rem 3rem;
 }
-
-.contact-box .input-box input {
-    margin-bottom: 1.5rem;
-}
-
-.container_text--contacto p:nth-child(1) {
-    text-align: start;
-    margin-bottom: 1rem;
-}
-
-.container_text--contacto p:nth-child(2) {
-    font-size: 1.4rem;
-    margin-bottom: 3.5rem;
-} */
