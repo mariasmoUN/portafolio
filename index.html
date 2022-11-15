@@ -280,39 +280,20 @@
             <h1>Contacto</h1>
 
             <div class="container--contacto">
-                <div class="container_img--contacto">
-                    <img src="./assets/images/img-contacto.png" alt="Ilustración de mujer y formas">
+                <div class="container_text--contacto">
+                    <p>Completa el formulario y me pondré en contacto lo antes posible.</p>
                 </div>
-    
-                <div class="container_form--contacto contact-box">
-                    <div class="container_text--contacto">
-                        <p>¿Quieres contactarme?</p>
-                        <p>Completa el formulario y me pondré en contacto lo antes posible.</p>
+
+                <form action="https://formspree.io/f/mbjbwkyz" method="POST" class="form-contact">
+                    <input type="text" name="name" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <input type="text" name="affair" placeholder="Asunto" required>
+                    <textarea cols="20" rows="6" name="message" placeholder="Mensaje" required></textarea>
+
+                    <div class="btn_form--contacto">
+                        <button id="btn-enviar" type="submit">Enviar</button>
                     </div>
-    
-                    <form>
-                        <div class="input-box">
-                            <input type="text" required>
-                            <label>Nombre</label>
-                        </div>
-                        <div class="input-box">
-                            <input type="email" required>
-                            <label>E-mail</label>
-                        </div>
-                        <div class="input-box">
-                            <input type="text" required>
-                            <label>Asunto</label>
-                        </div>
-                        <div class="input-box">
-                            <input type="text" required>
-                            <label>Mensaje</label>
-                        </div>
-    
-                        <div class="btn_form--contacto">
-                            <button id="btn-enviar">Enviar</button>
-                        </div>
-                    </form>
-                </div>
+                </form>
             </div>
         </section>
     </main>

@@ -677,87 +677,76 @@ img.logo-sena {
     display: none;
 }
 
-.container_form--contacto {
+.container--contacto {
     width: 100%;
-    background-color: var(--jet);
-    border-radius: 1.6rem;
+    background-color: var(--beaver);
+    border-radius: 24px;
     padding: 3rem;
+    position: relative;
 }
 
 .container_text--contacto {
     width: 100%;
 }
 
-.container_text--contacto p:nth-child(1) {
-    font-size: 2rem;
-    font-family: 'Cooper Hewitt';
-    letter-spacing: 1px;
-    text-align: center;
-    color: var(--beaver);
-    margin-bottom: 2rem;
-}
-
-.container_text--contacto p:nth-child(2) {
-    font-size: 1.4rem;
-    font-family: 'Cooper Hewitt';
-    color: var(--light-grey);
-    margin-bottom: 4rem;
-    letter-spacing: 1px;
-}
-
-.contact-box .input-box input {
-    position: relative;
-    width: 100%;
-    padding: .8rem 0;
+.container_text--contacto p {
     font-size: 1.6rem;
-    color: var(--light-grey);
-    margin-bottom: 2rem;
-    border: none;
-    border-bottom: 1px solid var(--light-grey);
-    outline: none;
-    background: transparent;
-}
-
-.contact-box .input-box label {
-    position: relative;
-    left: 0;
-    top: -5rem;
-    padding: .8rem 0;
-    font-size: 1.6rem;
-    color: var(--light-grey);
-    pointer-events: none;
-    transition: .5s;
     font-family: 'Cooper Hewitt';
-}
-
-.contact-box .input-box input:focus~label,
-.contact-box .input-box input:valid~label {
-    top: -7.5rem;
-    left: 0;
-    color: var(--beaver);
-    font-size: 1.2rem;
-}
-
-#btn-enviar {
-    padding: .8rem 2rem;
-    color: var(--beaver);
-    font-size: 1.4rem;
-    font-family: 'Cooper Hewitt';
-    text-decoration: none;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: .5s;
-    letter-spacing: 3px;
-    border: 1px solid var(--beaver);
-    margin: auto;
-    background: transparent;
-    cursor: pointer;
-    border-radius: 1rem;
-}
-
-#btn-enviar:hover {
-    background-color: var(--beaver);
     color: var(--white);
+    margin-bottom: 3rem;
+    letter-spacing: 1px;
+}
+
+.form-contact input {
+    font-family: 'Cooper Hewitt';
+    background: transparent;
+    border: 1px solid var(--light-grey);
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--white);
+    font-size: 1.6rem;
+    outline: none;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+.form-contact textarea {
+    background: transparent;
+    border: 1px solid var(--light-grey);
+    font-family: 'Cooper Hewitt';
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--white);
+    font-size: 1.6rem;
+    outline: none;
+    margin-bottom: 3rem;
+    letter-spacing: 1px;
+    resize: none;
+}
+
+.btn_form--contacto {
+    display: flex;
+    justify-content: center;
+}
+
+.btn_form--contacto button {
+    background: var(--white);
+    border: none;
+    font-family: 'Cooper Hewitt';
+    width: 13rem;
+    padding: .8rem 1rem;
+    border-radius: .5rem;
+    color: var(--jet);
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.btn_form--contacto button:hover {
+    background: var(--light-grey);
+    color: var(--black);
+    transition: all .4s ease;
 }
 
 /* Footer */
@@ -837,8 +826,8 @@ footer {
 
 .go-top-container {
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
+    bottom: 1rem;
+    right: 1rem;
     width: 6rem;
     height: 6rem;
     z-index: -1;
@@ -848,6 +837,7 @@ footer {
     width: 0rem;
     height: 0rem;
     background: rgba(167, 137, 118, 1);
+    box-shadow: 0px 6px 22px -6px rgba(0,0,0,0.75);
     border-radius: 50%;
     cursor: pointer;
     top: 50%;

@@ -302,7 +302,7 @@ div.btn {
     padding: 8rem 0 2.5rem 0;
 }
 
-.container--contacto {
+/* .container--contacto {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -336,4 +336,4 @@ div.btn {
 .container_text--contacto p:nth-child(2) {
     font-size: 1.4rem;
     margin-bottom: 3.5rem;
-}
+} */
