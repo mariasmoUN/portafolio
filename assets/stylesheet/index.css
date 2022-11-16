@@ -26,6 +26,19 @@ html {
     scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar {
+    width: 8px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: var(--eerie-black);
+}
+
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--beaver);;
+}
+
 /* Header */
 
 .header {
@@ -714,6 +727,10 @@ img.logo-sena {
     letter-spacing: 1px;
 }
 
+.form-contact input::placeholder {
+    color: var(--light-grey);
+}
+
 .form-contact .input-invalid {
     border: 1px solid #574438;
     color: #574438;
@@ -733,6 +750,24 @@ img.logo-sena {
     letter-spacing: 1px;
     resize: none;
 }
+
+.form-contact textarea::placeholder {
+    color: var(--light-grey);
+}
+
+.form-contact textarea::-webkit-scrollbar {
+    width: 8px;
+}
+
+.form-contact textarea::-webkit-scrollbar-track {
+    background-color: #776254;
+}
+
+
+.form-contact textarea::-webkit-scrollbar-thumb {
+    background-color: #574438;
+}
+
 
 .btn_form--contacto {
     display: flex;

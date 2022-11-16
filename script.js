@@ -1,5 +1,4 @@
 const btn = document.getElementById('button');
-/* const links = document.querySelectorAll('.link'); */
 const sectionAll = document.querySelectorAll('section[id]');
 
 /*===== Header =====*/
