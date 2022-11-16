@@ -1,5 +1,7 @@
 const btn = document.getElementById('button');
 const sectionAll = document.querySelectorAll('section[id]');
+const inputName = document.querySelector('#nombre');
+const inputEmail = document.querySelector('#email');
 
 /*===== Header =====*/
 window.addEventListener('scroll', () => {
