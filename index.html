@@ -255,7 +255,7 @@
 
                     <div class="container_textCard--proyectos">
                         <h2>Encriptador de Texto</h2>
-                        <p>Un juego donde el usuario debe adivinar la palabra secreta con un cierto número de oportunidades. La palabra se escoge de forma aleatoria por el programa y el usuario perderá en el momento en que la horca se complete. </p>
+                        <p>Un ecriptador donde el usuario puede escribir un texto y el encriptador lo codifica con llaves ya programadas. El encriptador también permite desencriptar el texto.</p>
                     </div>
 
                     <div class="container_btn--proyectos">
@@ -289,11 +289,11 @@
                         <p>Completa el siguiente formulario y me pondré en contacto lo antes posible.</p>
                     </div>
     
-                    <form class="form-contact">
-                        <input type="text" name="name" placeholder="Nombre" required>
-                        <input type="email" name="email" placeholder="E-mail" required>
-                        <input type="text" name="affair" placeholder="Asunto" required>
-                        <textarea cols="20" rows="6" name="message" placeholder="Mensaje" required></textarea>
+                    <form id="form" class="form-contact">
+                        <input id="nombre" type="text" name="name" placeholder="Nombre" required>
+                        <input id="email" type="email" name="email" placeholder="E-mail" required>
+                        <input id="asunto" type="text" name="affair" placeholder="Asunto" required>
+                        <textarea id="mensaje" cols="20" rows="6" name="message" placeholder="Mensaje" required></textarea>
     
                         <div class="btn_form--contacto">
                             <button id="btn-enviar" type="submit">Enviar</button>
