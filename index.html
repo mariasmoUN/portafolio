@@ -9,6 +9,9 @@
 
     <title>Mariana Arias | Desarrolladora Web Front-End</title>
 
+    <!-- Librerías -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Hojas de estilo -->
     <link rel="stylesheet" href="./assets/stylesheet/index.css">
     <link rel="stylesheet" href="./assets/stylesheet/tablet.css" media="screen and (min-width: 760px)">
@@ -49,7 +52,7 @@
     <main>
         <!-- Home -->
         <section class="home" id="home">
-            <picture class="container_image-home">
+            <picture class="container_image-home" data-aos="zoom-in">
                 <img class="image_home" src="./assets/images/image-home.png" alt="Ilustración mujer y plantas">
             </picture>
             
@@ -103,7 +106,7 @@
                         Soy una persona empática y entusiasta, con competencias enfocadas en el trabajo en equipo, comunicación asertiva, resolución de problemas, responsable y proactiva, me gusta aprender de los demás y superarme continuamente.</span>
                 </div>
     
-                <picture class="container_image-sobreMi">
+                <picture class="container_image-sobreMi" data-aos="fade-right">
                     <img class="image_sobreMi" src="./assets/images/image-sobreMi.png" alt="Ilustración mujer y café">
                 </picture>
             </div>
@@ -116,7 +119,7 @@
             <img src="./assets/images/puntos.png" alt="Decoración puntos" class="puntos1-habilidades">
             <img src="./assets/images/puntos.png" alt="Decoración puntos" class="puntos2-habilidades">
 
-            <div class="cards_container--habilidades">
+            <div class="cards_container--habilidades" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                 <div class="cards--habilidades">
                     <img src="./assets/images/icon-html.png" alt="Icono de HTML">
                     <p>HTML 5</p>
@@ -164,7 +167,7 @@
             <h1>Formación</h1>
 
             <div class="cards_container--formacion">
-                <div class="cards--formacion">
+                <div class="cards--formacion" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
                     <img class="logo-unal" src="./assets/images/logo-unal.png" alt="Logo - Universidad Nacional de Colombia">
                     <div class="container_texto--formacion">
                         <p>Estadística</p>
@@ -172,7 +175,7 @@
                     </div>
                 </div>
 
-                <div class="cards--formacion">
+                <div class="cards--formacion" data-aos="fade-up" data-aos-duration="500">
                     <img class="logo-one" src="./assets/images/logo-one.png" alt="Logo - ONE: Oracle Next Education">
                     <div class="container_texto--formacion">
                         <p>Full-Stack Developer</p>
@@ -180,7 +183,7 @@
                     </div>
                 </div>
 
-                <div class="cards--formacion">
+                <div class="cards--formacion" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
                     <img class="logo-sena" src="./assets/images/sena-logo.png" alt="Logo - SENA">
                     <div class="container_texto--formacion">
                         <p>Contabilización de Operaciones Comerciales y Financieras</p>
@@ -198,7 +201,7 @@
             <img src="./assets/images/puntos.png" alt="Decoración puntos" class="puntos2-proyectos">
 
             <div class="cards_container--proyectos">
-                <div class="cards--proyectos card_JuegoAhorcado">
+                <div class="cards--proyectos card_JuegoAhorcado" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="container_imgCard--proyectos">
                         <img src="./assets/images/cap-juegoAhorcado.png" alt="Proyecto: Juego del ahorcado">
                     </div>
@@ -223,7 +226,7 @@
                     </div>
                 </div>
 
-                <div class="cards--proyectos card_portafolio">
+                <div class="cards--proyectos card_portafolio" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="container_imgCard--proyectos">
                         <img src="./assets/images/cap-portafolio.png" alt="Proyecto: Portafolio">
                     </div>
@@ -248,7 +251,7 @@
                     </div>
                 </div>
 
-                <div class="cards--proyectos card_encriptador">
+                <div class="cards--proyectos card_encriptador" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                     <div class="container_imgCard--proyectos">
                         <img src="./assets/images/cap-encriptador.png" alt="Proyecto: Encriptador">
                     </div>
@@ -279,7 +282,7 @@
         <section class="contacto" id="contacto">
             <h1>Contacto</h1>
 
-            <div class="container_box--contacto">
+            <div class="container_box--contacto" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
     
                 <div class="container--contacto">
                     <div class="container_text--contacto">
@@ -344,6 +347,10 @@
     </div>
 
     <!-- Archivo Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./script.js"></script>
 </body>
 </html>
