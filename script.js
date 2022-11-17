@@ -3,6 +3,13 @@ const sectionAll = document.querySelectorAll('section[id]');
 const inputName = document.querySelector('#nombre');
 const inputEmail = document.querySelector('#email');
 
+/* ===== Loader =====*/
+window.addEventListener('load', () => {
+    const contenedorLoader = document.querySelector('.container--loader');
+    contenedorLoader.style.opacity = 0;
+    contenedorLoader.style.visibility = 'hidden';
+})
+
 /*===== Header =====*/
 window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
