@@ -39,6 +39,10 @@ html::-webkit-scrollbar-thumb {
     background-color: var(--beaver);;
 }
 
+::selection {
+    background-color: #776254;
+}
+
 /* Header */
 
 .header {
