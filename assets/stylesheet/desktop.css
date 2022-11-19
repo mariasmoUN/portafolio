@@ -190,7 +190,7 @@ div.btn {
 /* Habilidades */
 
 .habilidades {
-    height: 100vh;
+    padding-bottom: 8rem;
     position: relative;
 }
 
@@ -238,7 +238,7 @@ div.btn {
 /* Formación */
 
 .formacion {
-    height: 100vh;
+    padding-bottom: 2rem;
     position: relative;
 }
 
