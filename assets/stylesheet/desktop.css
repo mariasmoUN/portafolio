@@ -1,9 +1,16 @@
 /* Header */
 
 .header {
-    justify-content: flex-end;
+    justify-content: space-between;
+    padding: .8rem 3rem;
     z-index: 2;
+    /* border: 1px solid firebrick; */
 }
+
+/* .header .logo__header {
+    display: inline;
+    width: 4.5rem;
+} */
 
 .logo {
     display: none;

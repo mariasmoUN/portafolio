@@ -47,7 +47,7 @@ html::-webkit-scrollbar-thumb {
 
 .header {
     background-color: var(--jet);
-    padding: 1.5rem 3rem;
+    padding: .8rem 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,13 +64,20 @@ html::-webkit-scrollbar-thumb {
     background: rgba(41,41,41,.3);
 }
 
+.header .logo__header {
+    /* display: none; */
+    display: inline;
+    width: 4.5rem;
+}
+
 .logo {
-    color: var(--beaver);
+    display: none;
+/*     color: var(--beaver);
     font-family: 'Cooper Hewitt';
     font-weight: bold;
     font-size: 1.8rem;
     letter-spacing: .3rem;
-    text-decoration: none;  
+    text-decoration: none;   */
 }
 
 nav.nav_menu.active {
@@ -80,7 +87,7 @@ nav.nav_menu.active {
     flex-direction: column;
     position: absolute;
     left: 0;
-    top: 5.3rem;
+    top: 6.3rem;
     width: 100%;
     height: auto;
     background-color: var(--eerie-black);
