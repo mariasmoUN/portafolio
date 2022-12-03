@@ -536,6 +536,7 @@ img.logo-sena {
     font-family: 'Cooper Hewitt';
     letter-spacing: .1rem;
     font-size: 1.8rem;
+    font-weight: bold;
     margin-bottom: .7rem;
 }
 
@@ -620,7 +621,7 @@ img.logo-sena {
 }
 
 .container_textCard--proyectos p {
-    color: var(--light-grey);
+    color: var(--white);
     font-family: 'Cooper Hewitt';
     letter-spacing: .1rem;
     font-size: 1.4rem;
@@ -639,24 +640,28 @@ img.logo-sena {
 }
 
 .container_btn--proyectos button {
-    background: none;
-    color: var(--beaver);
-    border: 1px solid var(--beaver);
-    padding: .8rem 0;
     border-radius: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 12rem;
+    width: 15.8rem;
     letter-spacing: .1rem;
+    font-weight: bold;
     cursor: pointer;
 }
 
-.container_btn--proyectos button:hover {
-    background: #776254;
-    border: 1px solid #776254;
-    box-shadow: 0px 13px 33px -14px rgba(0,0,0,0.75);
-    transition: all .4s ease;
+.btn_demo {
+    padding: .9rem 0;
+    border: none;
+    background-color: var(--beaver);
+    color: var(--eerie-black);
+}
+
+.btn_repo {
+    padding: .8rem 0;
+    background: none;
+    color: var(--beaver);
+    border: 1px solid var(--beaver);
 }
 
 .btn_demo img {
@@ -664,9 +669,21 @@ img.logo-sena {
     margin-right: .8rem;
 }
 
+.container_btn--proyectos .btn_demo:hover {
+    background: #776254;
+    box-shadow: 0px 13px 33px -14px rgba(0,0,0,0.75);
+    transition: all .4s ease;
+}
+
 .btn_repo img {
     width: 2rem;
     margin-right: .8rem;
+}
+
+.container_btn--proyectos .btn_repo:hover {
+    background: var(--black);
+    box-shadow: 0px 13px 33px -14px rgba(0,0,0,0.75);
+    transition: all .4s ease;
 }
 
 /* Contacto */
@@ -778,9 +795,9 @@ img.logo-sena {
     background: #776254;
     border: none;
     font-family: 'Cooper Hewitt';
-    width: 13rem;
+    width: 20rem;
     padding: .8rem 1rem;
-    border-radius: .5rem;
+    border-radius: 1rem;
     color: var(--white);
     font-size: 1.8rem;
     letter-spacing: 1px;
@@ -791,6 +808,7 @@ img.logo-sena {
 .btn_form--contacto button:hover {
     background: #776254;
     color: var(--black);
+    font-weight: bold;
     transform: scale(1.1);
     box-shadow: 0px 9px 15px -1px rgba(0,0,0,0.20);
     transition: all .4s ease;
@@ -814,30 +832,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.link_home a {
-    color: var(--beaver);
-    font-size: 3rem;
-    font-family: 'Cooper Hewitt';
-    text-decoration: none;
-    letter-spacing: 2px;
-}
-
-.container_links--footer {
-    padding: 2rem 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.container_links--footer a {
-    color: var(--light-grey);
-    font-family: 'Cooper Hewitt';
-    font-size: 1.6rem;
-    margin: 0 .8rem;
-    text-decoration: none;
 }
 
 .container_redes-footer a {
@@ -871,6 +865,8 @@ footer {
 
 .container_text--footer span:nth-child(4) {
     color: var(--beaver);
+    letter-spacing: .1rem;
+    margin-left: .2rem;
 }
 
 /* Botón ir arriba */

@@ -83,6 +83,10 @@ nav.nav_menu.active {
     max-width: 48rem;
 }
 
+.container_btn--proyectos button {
+    width: 20.6rem;
+}
+
 /* Contacto */
 .container--contacto {
     margin: 0 auto;
