@@ -65,19 +65,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .header .logo__header {
-    /* display: none; */
-    display: inline;
     width: 4.5rem;
-}
-
-.logo {
-    display: none;
-/*     color: var(--beaver);
-    font-family: 'Cooper Hewitt';
-    font-weight: bold;
-    font-size: 1.8rem;
-    letter-spacing: .3rem;
-    text-decoration: none;   */
 }
 
 nav.nav_menu.active {
