@@ -323,10 +323,11 @@ span+span {
 .cv_button {
     background-color: var(--beaver);
     border-radius: 3rem;
-    padding: .5rem 2rem;
+    padding: .6rem 2rem .5rem 2rem;
     color: var(--jet);
     font-family: 'Cooper Hewitt';
     font-weight: bold;
+    font-size: 1.6rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
     margin: 2rem 0;

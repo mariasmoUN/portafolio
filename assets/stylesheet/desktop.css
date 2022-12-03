@@ -123,10 +123,11 @@ div.btn {
     display: inline-block;
     background-color: var(--beaver);
     border-radius: 3rem;
-    padding: .5rem 3.6rem;
+    padding: .7rem 4rem .6rem 4rem;
     color: var(--jet);
     font-family: 'Cooper Hewitt';
     font-weight: bold;
+    font-size: 1.6rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
     margin: 2rem 0 2rem 1rem;
