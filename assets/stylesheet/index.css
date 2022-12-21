@@ -350,6 +350,11 @@ span+span {
     margin: 0 .5rem;
 }
 
+.links .icon-CodePen {
+    width: 2.1rem;
+    margin-top: 2px;
+}
+
 /* Sobre mí */
 
 .sobreMi {
@@ -841,6 +846,11 @@ footer {
 .container_redes-footer img {
     width: 3.5rem;
     margin: 0 .5rem 1.5rem .5rem;
+}
+
+.container_redes-footer .icon_codepen--footer {
+    width: 3.1rem;
+    margin-bottom: 1.7rem;
 }
 
 .container_text--footer {
