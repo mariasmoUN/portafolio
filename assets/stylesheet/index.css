@@ -113,6 +113,24 @@ nav.nav_menu.not-active a {
     display: none;
 }
 
+nav.nav_menu.active .flags {
+    width: 12rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+nav.nav_menu.active .flags__item {
+    margin: 0 .3rem;
+    filter: contrast(65%);
+    cursor: pointer;
+}
+
+nav.nav_menu.not-active .flags {
+    display: none;
+}
+
 .btn {
     position: absolute;
     top: 50%;

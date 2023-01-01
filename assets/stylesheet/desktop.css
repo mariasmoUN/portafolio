@@ -33,6 +33,23 @@ nav.nav_menu.not-active a {
     display: flex;
 }
 
+nav.nav_menu.not-active .flags {
+    display: flex;
+    width: 7rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.nav_menu.not-active .flags__item {
+    filter: contrast(65%);
+    cursor: pointer;
+}
+
+nav.nav_menu.not-active .flags__item img {
+    width: 3rem;
+    display: block;
+}
+
 div.btn {
     display: none;
 }

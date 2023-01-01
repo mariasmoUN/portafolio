@@ -2,6 +2,8 @@ const btn = document.getElementById('button');
 const sectionAll = document.querySelectorAll('section[id]');
 const inputName = document.querySelector('#nombre');
 const inputEmail = document.querySelector('#email');
+const flagsElement = document.getElementById('flags');
+const textsToChange = document.querySelectorAll('[data-section]');
 
 /* ===== Loader =====*/
 window.addEventListener('load', () => {
@@ -31,6 +33,23 @@ btn.addEventListener('click', function() {
         document.querySelector('.nav_menu').classList.add('active');
     }
 });
+
+/*===== Cambio de idioma =====*/
+const changeLanguage = async language => {
+    const requestJson = await fetch(`./languages/${language}.json`);
+    const texts = await requestJson.json();
+
+    for(const textToChange of textsToChange) {
+        const section = textToChange.dataset.section;
+        const value = textToChange.dataset.value;
+
+        textToChange.innerHTML = texts[section][value];
+    }
+}
+
+flagsElement.addEventListener('click', (e) => {
+    changeLanguage(e.target.parentElement.dataset.language);
+})
 
 /*===== class active por secciones =====*/
 window.addEventListener('scroll', () => {
