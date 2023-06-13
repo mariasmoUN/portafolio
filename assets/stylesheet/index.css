@@ -474,7 +474,7 @@ span+span {
     align-items: center;
     justify-content: center;
     text-align: center;
-    filter: saturate(40%);
+    /* filter: saturate(40%); */
     width: 13rem;
     height: 14rem;
 }
